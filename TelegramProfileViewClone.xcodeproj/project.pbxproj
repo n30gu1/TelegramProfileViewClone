@@ -11,6 +11,7 @@
 		B2A14D9128BE3D3E006A8D97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A14D9028BE3D3E006A8D97 /* ContentView.swift */; };
 		B2A14D9328BE3D3F006A8D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A14D9228BE3D3F006A8D97 /* Assets.xcassets */; };
 		B2A14D9628BE3D3F006A8D97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A14D9528BE3D3F006A8D97 /* Preview Assets.xcassets */; };
+		B2A14D9E28BE3D5F006A8D97 /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = B2A14D9D28BE3D5F006A8D97 /* SwiftUITrackableScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A14D9E28BE3D5F006A8D97 /* SwiftUITrackableScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TelegramProfileViewClone;
+			packageProductDependencies = (
+				B2A14D9D28BE3D5F006A8D97 /* SwiftUITrackableScrollView */,
+			);
 			productName = TelegramProfileViewClone;
 			productReference = B2A14D8B28BE3D3E006A8D97 /* TelegramProfileViewClone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B2A14D8228BE3D3E006A8D97;
+			packageReferences = (
+				B2A14D9C28BE3D5F006A8D97 /* XCRemoteSwiftPackageReference "trackable-scroll-view" */,
+			);
 			productRefGroup = B2A14D8C28BE3D3E006A8D97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2A14D9C28BE3D5F006A8D97 /* XCRemoteSwiftPackageReference "trackable-scroll-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxnatchanon/trackable-scroll-view.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2A14D9D28BE3D5F006A8D97 /* SwiftUITrackableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A14D9C28BE3D5F006A8D97 /* XCRemoteSwiftPackageReference "trackable-scroll-view" */;
+			productName = SwiftUITrackableScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2A14D8328BE3D3E006A8D97 /* Project object */;
 }
